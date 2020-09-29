@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/predmeti.css">
+    <!-- css za ikonice -->
+    <link rel="stylesheet" href="../css/ikonice.css">
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Pocinje Vertikalni NavBar -->
+
+        <nav id="sidebar">
+            <div class="sidebar-header ml-5 pl-5">
+                <h3><b>ATVSS</b>NIŠ</h3>
+            </div>
+
+            <ul class="list-unstyled components ml-5 mt-5">
+
+                <li class="mb-3 pt-1 aktivan-dash">
+                    <a href="dashboard.html">
+                        <span class="icon-dashbempty"></span>
+                        Dashboard
+                    </a>
+                </li>
+
+                <li class="mb-3 pt-1 sidebar-hover">
+                    <a href="./predmeti/predmeti-tabela.html">
+                        <span class="icon-noteadd1"></span>
+                        Predmeti
+                    </a>
+                </li>
+
+                <li class=" mb-3 pt-1 sidebar-hover">
+                    <a href="osoblje.html">
+                        <span class="icon-user"></span>
+                        Osoblje
+                    </a>
+                </li>
+
+                <li class=" ml-5 mb-3 disabled">
+                    <a class="disabled">
+                        <span class="icon-document-edit"></span>
+                        Beleške
+                    </a>
+                </li>
+            </ul>
+            <ul class="list-unstyled CTAs d-flex justify-content-center">
+                <li class="dodaj">
+                    <a href="#" class="download pl-1 py-2 ">+ Dodaj</a>
+                </li>
+            </ul>
+
+        </nav>
+        <div class="mr-2">
+            <button type="button" id="sidebarCollapse" class="navbar-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+        </div>
+
+        <div id="content">
+            <!-- Zavrsava se Vertikalni NavBar -->
+
+            <!-- Pocinje Horizontalni Navbar -->
+            <div class="row d-flex justify-content-end">
+                <div class="pr-3">
+                    <div class="btn-group">
+                        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span
+                                class="icon-chat"><span class="path1"></span><span class="path2"></span></span>
+                        </button>
+
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">Nema novih poruka</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="pr-3">
+                    <div class="btn-group">
+                        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span
+                                class="icon-bellnotif"><span class="path1"></span><span class="path2"></span></span>
+                        </button>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Notifikacija 1</a>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="pr-3">
+                    <div class="btn-group">
+                        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Ime i
+                            Prezime <span class="icon-arrowdwn"></span>
+                        </button>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="profil.html">Pogledaj Profil</a>
+                            <a class="dropdown-item" href="login.html">Log Out</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="pr-3"><a href="profil.html"><span class="icon-elipse1"></span></a></div>
+            </div>
+            <!-- Zavrsava se Horizontalni Navbar -->
+
+
+            <!-- Pocinje Tabela -->
+            <div class="container">
+                <div class="row">
+                    <div class=" table-responsive table-div-small col-12 col-lg-8  my-5  ">
+                        <div class="row px-4 pb-2 pt-4">
+                            
+                            <h4 class="">Beleške</h4>
+                        
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="beleske-text px-3 pb-3 mx-3 pt-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quos iste dolorem libero,
+                                ipsam alias nam eius earum, dolore laudantium tempore vel vitae labore veniam
+                                consequatur doloremque aut corrupti facilis!
+                            </div>
+
+                            <div class="beleske-text px-3 pb-3 mx-3 my-2 pt-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quos iste dolorem libero,
+                                ipsam alias nam eius earum, dolore laudantium tempore vel vitae labore veniam
+                                consequatur doloremque aut corrupti facilis!
+                            </div>
+                            <div id="prikazisve" class="collapse">
+                                <div class="beleske-text px-3 pb-3 mx-3 pt-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quos iste dolorem
+                                    libero, ipsam alias nam eius earum, dolore laudantium tempore vel vitae labore
+                                    veniam consequatur doloremque aut corrupti facilis!
+                                </div>
+
+                                <div class="beleske-text px-3 pb-3 mx-3 my-2 pt-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quos iste dolorem
+                                    libero, ipsam alias nam eius earum, dolore laudantium tempore vel vitae labore
+                                    veniam consequatur doloremque aut corrupti facilis!
+                                </div>
+                            </div>
+                            <a href="#" data-toggle="collapse" data-target="#prikazisve"
+                                class="btn-prikazi pl-4 mb-5 pt-1"><span class="icon-plusadd"></span>
+                                Prikaži sve</a>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-lg-4  ">
+                        <div class=" ml-3 mt-5 p-5 mb-5 purple-dashboard">
+                            <div class="row d-flex justify-content-between mb-3">
+                                <span class="live">Današnji Live stream</span>
+                                <div class="circle2 pl-1">
+                                    <div class=""> <span class="icon-pen pl-2 "></span></div>
+                                </div>
+
+                            </div>
+
+                            <div class="row d-flex justify-content-between mt-2">
+                                <div>
+                              <span class="small">
+                                <span class="icon-xx gray"></span>
+                                <span class="gray mx-2">12:45</span>
+                                  Objektno Orijentisano Programiranje
+                              </span>
+                            </div>
+                            <div class="mt-1">
+                                <a href="#" class="small">Link</a>
+                            </div>
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="table-div-small p-5">
+                        <div class="row  py-2 ">
+                            <h4>Poslednja Obaveštenja</h4>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+
+                            <div class="beleske-text my-3 px-4 py-4 mx-1 ">
+                                <div class="row pl-3 ">
+                                    <h5 class="pt-1">Lorem Ipsum</h5>
+                                    <div class="pl-3 ">
+                                    <span class="icon-calendar mr-1"></span>
+                                        <span class="text small ">20.06.2020.</span>
+                                    </div>
+
+                                    
+                                </div>
+                                <div class="row">
+                                    <div class="col-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                                        quos
+                                        iste dolorem libero,
+                                        ipsam alias nam eius earum, dolore laudantium tempore vel vitae labore veniam
+                                        consequatur doloremque aut corrupti facilis!
+                                    </div>
+                                    <div class="col-2 mt-2">
+                                        <a href="#" class="px-3 plus  pt-1"><span class="icon-plusadd"></span>
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+                            <div class="beleske-text my-3 px-4 py-3 mx-1 ">
+                                <div class="row pl-3 ">
+                                    <h5 class="pt-1">Lorem Ipsum</h5>
+                                    <div class="pl-3 ">
+                                    <span class="icon-calendar mr-1"></span>
+                                        <span class="text small ">20.06.2020.</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                                        quos
+                                        iste dolorem libero,
+                                        ipsam alias nam eius earum, dolore laudantium tempore vel vitae labore veniam
+                                        consequatur doloremque aut corrupti facilis!
+                                    </div>
+                                    <div class="col-2 mt-2">
+                                        <a href="#" class="px-3 plus  pt-1"><span class="icon-plusadd"></span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div id="prikazisve2" class="collapse">
+                                <div class="beleske-text my-3 px-4 py-3 mx-1 ">
+                                    <div class="row pl-3 ">
+                                        <h5 class="pt-1">Lorem Ipsum</h5>
+                                        <div class="pl-3 ">
+                                        <span class="icon-calendar mr-1"></span>
+                                            <span class="text small ">20.06.2020.</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                                            quos
+                                            iste dolorem libero,
+                                            ipsam alias nam eius earum, dolore laudantium tempore vel vitae labore veniam
+                                            consequatur doloremque aut corrupti facilis!
+                                        </div>
+                                        <div class="col-2 mt-2">
+                                            <a href="#" class="px-3 plus  pt-1"><span class="icon-plusadd"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+    
+                                </div> <div class="beleske-text my-3 px-4 py-3 mx-1 ">
+                                    <div class="row pl-3 ">
+                                        <h5 class="pt-1">Lorem Ipsum</h5>
+                                        <div class="pl-3 ">
+                                        <span class="icon-calendar mr-1"></span>
+                                            <span class="text small ">20.06.2020.</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                                            quos
+                                            iste dolorem libero,
+                                            ipsam alias nam eius earum, dolore laudantium tempore vel vitae labore veniam
+                                            consequatur doloremque aut corrupti facilis!
+                                        </div>
+                                        <div class="col-2 mt-2">
+                                            <a href="#" class="px-3 plus  pt-1"><span class="icon-plusadd"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                            <a href="#" data-toggle="collapse" data-target="#prikazisve2"
+                                class="btn-prikazi mt-4 pl-4 mb-5 pt-1"><span class="icon-plusadd"></span>
+                                Prikaži sve</a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+
+    <!-- Zavrsava se tabela -->
+    <script src="../javascript/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

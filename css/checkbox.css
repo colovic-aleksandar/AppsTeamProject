@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../static/checkfonts/icomoon.eot?dnmymf');
+  src:  url('../static/checkfonts/icomoon.eot?dnmymf#iefix') format('embedded-opentype'),
+    url('../static/checkfonts/icomoon.ttf?dnmymf') format('truetype'),
+    url('../static/checkfonts/icomoon.woff?dnmymf') format('woff'),
+    url('../static/checkfonts/icomoon.svg?dnmymf#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-checkmark {
+  content: "\ea10";
+}
+
+.regular-checkbox + label { }
+
+label {
+	display: inline;
+}
+
+.regular-checkbox {
+	display: none;
+}
+
+.regular-checkbox + label {
+	background-color: #fafafa;
+	border: 1px solid #a3a3a3;
+	padding: 5px;
+	border-radius: 3px;
+	display: inline-block;
+    position: relative;
+    margin-top:5px;
+    margin-right:3px;
+    
+}
+
+
+.regular-checkbox1 + label {
+	background-color: #fafafa;
+	border: 1px solid #7546d3;
+	padding: 5px;
+	border-radius: 3px;
+	display: inline-block;
+    position: relative;
+    
+}
+
+.regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.regular-checkbox:checked + label {
+	background-color: #e9ecee;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #9e99a7;
+}
+
+.regular-checkbox1:checked + label {
+	background-color: #e9ecee;
+	border: 1px solid #7546d3;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #9e99a7;
+}
+
+.regular-checkbox:checked + label:after {
+  content: "\ea10";
+	font-size: 7px;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	color:#8221d2;
+}

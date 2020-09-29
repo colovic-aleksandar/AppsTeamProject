@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/predmeti.css">
+    <!-- css za ikonice -->
+    <link rel="stylesheet" href="../../css/ikonice.css">
+
+    <title>Predmeti</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Pocinje Vertikalni NavBar -->
+        <nav id="sidebar">
+            <div class="sidebar-header ml-5 pl-5">
+                <h3><b>ATVSS</b>NIŠ</h3>
+            </div>
+
+            <ul class="list-unstyled components ml-5 mt-5">
+
+                <li class="mb-3 pt-1 sidebar-hover-dash">
+                    <a href="../dashboard.html">
+                        <span class="icon-dashbempty"></span>
+                        Dashboard
+                    </a>
+                </li>
+
+                <li class="mb-3 pt-1 aktivan">
+                    <a href="./predmeti-tabela.html">
+                        <span class="icon-noteadd1"></span>
+                        Predmeti
+                    </a>
+                </li>
+
+                <li class=" mb-3 pt-1 sidebar-hover">
+                    <a href="../osoblje.html">
+                        <span class="icon-user"></span>
+                        Osoblje
+                    </a>
+                </li>
+
+                <li class=" ml-5 mb-3 disabled">
+                    <a class="disabled">
+                        <span class="icon-document-edit"></span>
+                        Beleške
+                    </a>
+                </li>
+            </ul>
+            <ul class="list-unstyled CTAs d-flex justify-content-center">
+                <li class="dodaj">
+                    <a href="#" class="download pl-1 py-2 ">+ Dodaj</a>
+                </li>
+            </ul>
+
+        </nav>
+        <div class="mr-2">
+            <button type="button" id="sidebarCollapse" class="navbar-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+        </div>
+
+        <div id="content">
+            <!-- Zavrsava se Vertikalni NavBar -->
+
+            <!-- Pocinje Horizontalni Navbar -->
+            <div class="row d-flex justify-content-end">
+                <div class="pr-3">
+                    <div class="btn-group">
+                        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span
+                                class="icon-chat"><span class="path1"></span><span class="path2"></span></span>
+                        </button>
+
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">Nema novih poruka</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="pr-3">
+                    <div class="btn-group">
+                        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span
+                                class="icon-bellnotif"><span class="path1"></span><span class="path2"></span></span>
+                        </button>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Notifikacija 1</a>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="pr-3">
+                    <div class="btn-group">
+                        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Ime i
+                            Prezime <span class="icon-arrowdwn"></span>
+                        </button>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../profil.html">Pogledaj Profil</a>
+                            <a class="dropdown-item" href="../login.html">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pr-3"><a href="../profil.html"><span class="icon-elipse1"></span></a></div>
+            </div>
+            <!-- Zavrsava se Horizontalni Navbar -->
+
+
+            <!-- Pocinje Tabela -->
+
+
+            <div class=" table-responsive table-div mt-5 p-5">
+
+                <div class="row d-flex justify-content-start ml-1 mb-3">
+                    <a href="predmeti-prisustvo.html">
+                        <div class="circle mr-2 mt-1">
+                            <span class="icon-arrowdwn  pb-3  arrowleft"></span>
+                        </div>
+                    </a>
+
+                    <span class="text predmet-ime ">Ime Predmeta</span>
+
+                </div>
+                <br>
+                <span class="text medjuheader  mt-5 "> Popuni Opcije</span>
+                <div class="row d-flex justify-content-start mt-3 ml-0 mb-5">
+
+                    <form action="">
+                        <select class="form-control browser-default select-section custom-select mr-4">
+                            <option selected>Odaberi Sekciju</option>
+                            <option value="1">Obaveza</option>
+                            <option value="2">Literatura</option>
+
+
+                        </select>
+
+                        <select class="form-control browser-default custom-select mr-4">
+                            <option selected>Tip Obaveze</option>
+                            <option value="1">Test</option>
+                            <option value="1">Seminarski</option>
+                            <option value="2">Drugo</option>
+
+                        </select>
+
+                        <input type="date">
+
+                    </form>
+                </div>
+
+
+                <span class="text medjuheader  mt-5 "> Dodaj Opis</span>
+                <div class="row mt-3 ml-0">
+
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" placeholder="Naslov" class="naslov form-control"><br>
+                            <textarea name="" id="" rows="5" placeholder="Dodaj Opis" class="form-control"></textarea>
+                        </div>
+                    </form>
+                </div>
+
+
+                <span class="text medjuheader  mt-5 "> Priloži fajlove</span>
+                <div class="row mt-3 ml-0">
+
+                    <form action="">
+                        <div class="form-group">
+
+                          <h3>OVDE IDE DRAG AND DROP</h3><br>
+
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="mt-2">
+                                <span class="icon-adobeicon   mr-3 "></span>
+                            </div>
+                            <div>
+                                <div class="d-flex justify-content-around">
+                                    <label for="file" class="text mt-1">Ime nekog fajla.ext</label>
+                                    <div>
+                                    <label for="file" class="text mt-1 small"> 1mb</label>
+                                    <span class="icon-x   ml-5 "></span>
+                                </div>
+                                </div>
+                               
+                                <progress id="file" value="32" max="100" class="mb-5"> 32% </progress>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="row d-flex justify-content-center">
+                    <a href="dodajpredmet.html" class="objavi py-2 mt-2">Objavi</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Zavrsava se tabela -->
+    <script src="../../javascript/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="../../static/bootstrap/js/bootstrap.min.js"></script>
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

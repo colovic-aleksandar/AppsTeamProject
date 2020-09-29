@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/predmeti.css">
+    <!-- css za ikonice -->
+    <link rel="stylesheet" href="../../css/ikonice.css">
+
+    <title>Predmeti</title>
+</head>
+
+<body>
+
+    <div class="wrapper mr-1 ">
+        <!-- Pocinje Vertikalni NavBar -->
+
+        <nav id="sidebar">
+            <div class="sidebar-header ml-5 pl-5">
+                <h3><b>ATVSS</b>NIŠ</h3>
+            </div>
+
+            <ul class="list-unstyled components ml-5 mt-5">
+
+                <li class="mb-3 pt-1 sidebar-hover-dash">
+                    <a href="../dashboard.html">
+                        <span class="icon-dashbempty"></span>
+                        Dashboard
+                    </a>
+                </li>
+
+                <li class="mb-3 pt-1 aktivan">
+                    <a href="./predmeti-tabela.html">
+                        <span class="icon-noteadd1"></span>
+                        Predmeti
+                    </a>
+                </li>
+
+                <li class=" mb-3 pt-1 sidebar-hover">
+                    <a href="../osoblje.html">
+                        <span class="icon-user"></span>
+                        Osoblje
+                    </a>
+                </li>
+
+                <li class=" ml-5 mb-3 disabled">
+                    <a class="disabled">
+                        <span class="icon-document-edit"></span>
+                        Beleške
+                    </a>
+                </li>
+            </ul>
+            <ul class="list-unstyled CTAs d-flex justify-content-center">
+                <li class="dodaj">
+                    <a href="#" class="download pl-1 py-2 ">+ Dodaj</a>
+                </li>
+            </ul>
+
+        </nav>
+        <div class="mr-1">
+            <button type="button" id="sidebarCollapse" class="navbar-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+        </div>
+        <div id="content">
+            <!-- Zavrsava se Vertikalni NavBar -->
+
+            <!-- Pocinje Horizontalni Navbar -->
+            <div class=" row d-flex horiz justify-content-end">
+                <div class="pr-3">
+                    <div class="btn-group">
+                        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span
+                                class="icon-chat"><span class="path1"></span><span class="path2"></span></span>
+                        </button>
+
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">Nema novih poruka</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="pr-3">
+                    <div class="btn-group">
+                        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span
+                                class="icon-bellnotif"><span class="path1"></span><span class="path2"></span></span>
+                        </button>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Notifikacija 1</a>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="pr-3">
+                    <div class="btn-group">
+                        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Ime i
+                            Prezime <span class="icon-arrowdwn"></span>
+                        </button>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../profil.html">Pogledaj Profil</a>
+                            <a class="dropdown-item" href="../login.html">Log Out</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="pr-3"><a href="../profil.html"><span class="icon-elipse1"></span></a></div>
+            </div>
+            <!-- Zavrsava se Horizontalni Navbar -->
+
+
+            <!-- Pocinje Tabela -->
+            <div class="container">
+
+                <div class="row">
+
+                    <div class=" table-responsive table-div col-12 mr-5  mt-5 p-5">
+                        <div class="row my-3 pl-4 d-flex justify-content-between">
+                            <span class="text predmet-ime ">Ime Predmeta</span><br>
+                            <a href="dodajpredmet.html" class="download pl-4 py-2 mt-2">+ Dodaj</a>
+                        </div>
+
+                        <div class="row my-3">
+                            <div class="d-flex justify-content-left">
+                                <div class="ml-4">
+                                    <a class="tabs active" href="obaveze.html"> Obaveze</a>
+                                </div>
+                                <div class="ml-4">
+                                    <a class="tabs " href="Literatura.html"> Literatura</a>
+                                </div>
+                                <div class="ml-4">
+                                    <a class="tabs" href="zadacizavezbu.html">Zadaci za vežbu</a>
+                                </div>
+
+                                <div class="ml-4">
+                                    <a class="tabs " href="predmeti-prisustvo.html"> Prisustvo</a>
+                                </div>
+                                <div class="ml-4">
+                                    <a class="tabs " href="rezultati.html"> Rezultati </a>
+                                </div>
+                            </div>
+                            <hr class="tabshr">
+                        </div>
+                        <div class="row">
+                            <div class="row  mb-3 px-4 py-2 test">
+                                
+                                <a href="#"><span data-toggle="collapse" data-target="#test"  class="icon-arrowdwn mx-3"></span><span data-toggle="collapse" data-target="#test" class="mt-2 mr-4 text ">   Test Prisustvo za
+                                    02.06.2020.</a> </span>
+                                <span class="aktivan-sm mt-1 pt-1  "> Aktivan</span>
+                                <div id="test" class="collapse col-12">
+                                    <div>
+                                        <br>
+                                        <h5>Opis</h5>
+                                        <span class="text">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum vel
+                                            reprehenderit rem fuga ipsum, fugiat repellendus laborum doloribus odio
+                                            odit. Fugiat distinctio nobis quis qui illo delectus possimus perspiciatis
+                                            labore.
+                                        </span>
+                                    </div>
+
+                                    <div>
+                                        <br>
+                                        <h5>Dodati Fajlovi</h5>
+                                        <span class="icon-adobeicon pr-4 mt-5  "></span>
+                                        <span class="test text mb-3 pb-3">OP_TEST_12_05_2020.pdf 1MB</span>
+                                    </div>
+
+
+                                    <div>
+                                        <br>
+                                        <h5>Rok Za Dostavu</h5>
+                                        <span class="text">
+                                            21.12.2020.
+                                        </span>
+                                    </div>
+
+                                    <table class="table mt-4 col-12">
+
+                                        <thead class="thead-light">
+                                            <tr>
+                                                <th scope="col">Ime i Prezime</th>
+                                                <th scope="col">Br Indeksa</th>
+                                                <th scope="col">Status</th>
+                                                <th scope="col">Radovi</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Petar Petrovic</td>
+                                                <td>Rer 19/19</td>
+                                                <td>
+                                                    <select class="browser-default custom-select">
+                                                        <option selected>Dostavio Rad</option>
+                                                        <option value="1">Nije Dostavio Rad</option>
+                                                        <option value="2">Drugo</option>
+                                                        
+                                                      </select>
+
+                                                </td>
+                                                <td class="purple"><a href="#">Pogledaj Rad</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Zavrsava se tabela -->
+    <script src="../../javascript/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="../../static/bootstrap/js/bootstrap.min.js"></script>
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
